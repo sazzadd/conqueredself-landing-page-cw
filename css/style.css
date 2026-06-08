@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* font inter */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+.font-libre {
+  font-family: "Libre Baskerville", serif !important;
+}
+
+.font-bricolage {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.font-inter-tight {
+  font-family: "Inter Tight", sans-serif !important;
+}
+/* header */
+html {
+  scroll-behavior: smooth;
+}
+
+#siteHeader {
+  transition: all 0.35s ease;
+}
+
+#siteHeader.header-scrolled {
+  background: rgba(255, 248, 235, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(72, 59, 43, 0.12);
+}
+
+#siteHeader .header-inner {
+  transition: all 0.35s ease;
+}
+
+#siteHeader.header-scrolled .header-inner {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#siteHeader .menu-link {
+  color: #2e2e2e;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+#siteHeader.header-scrolled .menu-link {
+  color: #483b2b;
+}
+
+#siteHeader .menu-link:hover {
+  color: #535a41;
+  transform: translateY(-1px);
+}
+
+#siteHeader .header-logo img {
+  transition: all 0.35s ease;
+}
+
+#siteHeader.header-scrolled .header-logo img {
+  transform: scale(0.92);
+}
+
+/* Mobile menu hide/show */
+.mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.mobile-menu.mobile-menu-active {
+  max-height: 420px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Optional gradient icon */
+.toggle-gradient-icon {
+  background: linear-gradient(348.01deg, #535a41 8.67%, #7a7b5d 91.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
