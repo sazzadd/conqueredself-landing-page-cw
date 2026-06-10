@@ -441,40 +441,64 @@
         </div>
       </div>
     </section>
-
+    <!-- Choose your path End-->
     <!-- Process-Steps -->
 
     <section
       class="relative w-full overflow-hidden bg-[#FDF9EF] px-5 py-[28px] md:py-[48px]"
     >
-      <!-- Left Overlay Image -->
+      <!-- Decorative Images -->
       <img
         src="./assets/images/step-overlay-left.webp"
         alt="Left Decoration"
-        class="pointer-events-none absolute left-0 top-0 z-[1] h-auto w-[90px] select-none object-contain md:w-[120px] lg:w-[170px]"
+        class="pointer-events-none absolute left-0 top-0 z-[1] h-auto w-[92px] select-none object-contain md:w-[120px] lg:w-[170px]"
       />
 
-      <!-- Right Overlay Image -->
+      <img
+        src="./assets/images/step-overlay-left.webp"
+        alt="Left Decoration"
+        class="pointer-events-none absolute left-0 top-[330px] z-[1] h-auto w-[92px] select-none object-contain md:hidden"
+      />
+
+      <img
+        src="./assets/images/step-overlay-left.webp"
+        alt="Left Decoration"
+        class="pointer-events-none absolute left-0 bottom-[160px] z-[1] h-auto w-[92px] select-none object-contain md:hidden"
+      />
+
+      <!-- Desktop/Tablet  middle position  right overlay-->
       <img
         src="./assets/images/step-overlay-right.webp"
         alt="Right Decoration"
-        class="pointer-events-none absolute right-0 top-[110px] z-[1] h-auto w-[80px] select-none object-contain md:top-auto md:bottom-0 md:w-[120px] lg:w-[170px]"
+        class="pointer-events-none absolute right-0 top-[110px] z-[1] h-auto w-[86px] select-none object-contain md:top-[118px] md:bottom-auto md:w-[120px] lg:top-[135px] lg:bottom-auto lg:w-[170px]"
       />
 
-      <!-- Main Prgress Content -->
-      <div class="relative z-[5] mx-auto w-full max-w-[1280px]">
-        <!-- Top Steps Section -->
+      <img
+        src="./assets/images/step-overlay-right.webp"
+        alt="Right Decoration"
+        class="pointer-events-none absolute right-0 top-[420px] z-[1] h-auto w-[86px] select-none object-contain md:hidden"
+      />
+
+      <img
+        src="./assets/images/step-overlay-right.webp"
+        alt="Right Decoration"
+        class="pointer-events-none absolute right-0 bottom-[40px] z-[1] h-auto w-[86px] select-none object-contain md:hidden"
+      />
+
+      <!-- Main Content -->
+      <div class="relative z-[5] mx-auto w-full max-w-[1240px]">
+        <!-- Top Area -->
         <div
-          class="flex flex-col items-center gap-[36px] md:flex-row md:items-center md:justify-between md:gap-[36px] lg:gap-[48px]"
+          class="grid grid-cols-1 items-center gap-[34px] md:grid-cols-[330px_1fr] md:gap-[34px] lg:grid-cols-[372px_1fr] lg:gap-[48px]"
         >
           <!-- Left Text -->
           <div
-            class="w-full max-w-[372px] text-center md:shrink-0 md:text-left"
+            class="mx-auto w-full max-w-[372px] text-center md:mx-0 md:text-left"
           >
             <img
               src="./assets/images/divider2.webp"
               alt="Divider"
-              class="mx-auto h-auto w-full max-w-[240px] object-contain md:mx-0 md:max-w-[315px]"
+              class="mx-auto h-auto w-full max-w-[165px] object-contain md:mx-0 md:max-w-[260px] lg:max-w-[315px]"
             />
 
             <h2
@@ -485,7 +509,7 @@
             </h2>
 
             <p
-              class="mx-auto mt-[14px] max-w-[372px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-['Inter'] text-[12px] font-medium leading-[150%] tracking-[0] text-transparent md:mx-0 md:mt-[18px] md:text-left md:text-[18px] lg:text-[20px]"
+              class="mx-auto mt-[12px] max-w-[260px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-['Inter'] text-[12px] font-medium leading-[150%] tracking-[0] text-transparent md:mx-0 md:mt-[18px] md:max-w-[372px] md:text-left md:text-[18px] lg:text-[20px]"
             >
               Small steps. Daily consistency.<br />
               Extraordinary life.
@@ -493,17 +517,17 @@
           </div>
 
           <!-- Right Steps -->
-          <div class="w-full md:flex-1 lg:max-w-[860px]">
-            <!-- Desktop / Tablet Layout -->
+          <div class="w-full min-w-0">
+            <!-- Desktop / Tablet -->
             <div
               class="hidden md:grid md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] md:items-start md:gap-x-[14px] lg:gap-x-[20px]"
             >
               <!-- Step 1 -->
-              <div class="flex flex-col items-center text-center">
+              <div class="flex min-w-0 flex-col items-center text-center">
                 <img
                   src="./assets/images/step-icon-1.webp"
                   alt="Choose Your Path"
-                  class="h-auto w-[96px] object-contain lg:w-[120px]"
+                  class="h-auto w-full max-w-[112px] object-contain lg:max-w-[120px]"
                 />
 
                 <h3
@@ -513,14 +537,13 @@
                 </h3>
 
                 <p
-                  class="mt-[14px] max-w-[150px] text-center font-['Inter'] text-[16px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[12px] max-w-[150px] text-center font-['Inter'] text-[14px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] lg:text-[16px]"
                 >
                   Pick the 49-day journey that calls to your heart.
                 </p>
               </div>
 
-              <!-- Arrow -->
-              <div class="flex justify-center pt-[50px] lg:pt-[58px]">
+              <div class="flex justify-center pt-[48px] lg:pt-[54px]">
                 <img
                   src="./assets/images/step-arrow.webp"
                   alt="Arrow"
@@ -529,28 +552,28 @@
               </div>
 
               <!-- Step 2 -->
-              <div class="flex flex-col items-center text-center">
+              <div class="flex min-w-0 flex-col items-center text-center">
                 <img
                   src="./assets/images/step-icon-2.png"
                   alt="Daily Practice"
-                  class="h-auto w-[96px] object-contain lg:w-[120px]"
+                  class="h-auto w-full max-w-[112px] object-contain lg:max-w-[120px]"
                 />
 
                 <h3
                   class="mt-[18px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[16px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
-                  DAILY PRACTICE
+                  DAILY<br class="md:block lg:hidden" />
+                  PRACTICE
                 </h3>
 
                 <p
-                  class="mt-[14px] max-w-[150px] text-center font-['Inter'] text-[16px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[12px] max-w-[150px] text-center font-['Inter'] text-[14px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] lg:text-[16px]"
                 >
                   Follow guided practices designed for real life.
                 </p>
               </div>
 
-              <!-- Arrow -->
-              <div class="flex justify-center pt-[50px] lg:pt-[58px]">
+              <div class="flex justify-center pt-[48px] lg:pt-[54px]">
                 <img
                   src="./assets/images/step-arrow.webp"
                   alt="Arrow"
@@ -559,28 +582,28 @@
               </div>
 
               <!-- Step 3 -->
-              <div class="flex flex-col items-center text-center">
+              <div class="flex min-w-0 flex-col items-center text-center">
                 <img
                   src="./assets/images/step-icon-3.webp"
                   alt="Track and Reflect"
-                  class="h-auto w-[96px] object-contain lg:w-[120px]"
+                  class="h-auto w-full max-w-[112px] object-contain lg:max-w-[120px]"
                 />
 
                 <h3
                   class="mt-[18px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[16px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
-                  TRACK &amp; REFLECT
+                  TRACK &amp;<br class="md:block lg:hidden" />
+                  REFLECT
                 </h3>
 
                 <p
-                  class="mt-[14px] max-w-[150px] text-center font-['Inter'] text-[16px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[12px] max-w-[150px] text-center font-['Inter'] text-[14px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] lg:text-[16px]"
                 >
                   Build habits, track progress, and journal your growth.
                 </p>
               </div>
 
-              <!-- Arrow -->
-              <div class="flex justify-center pt-[50px] lg:pt-[58px]">
+              <div class="flex justify-center pt-[48px] lg:pt-[54px]">
                 <img
                   src="./assets/images/step-arrow.webp"
                   alt="Arrow"
@@ -589,45 +612,46 @@
               </div>
 
               <!-- Step 4 -->
-              <div class="flex flex-col items-center text-center">
+              <div class="flex min-w-0 flex-col items-center text-center">
                 <img
                   src="./assets/images/step-icon-4.webp"
                   alt="Become Your Best"
-                  class="h-auto w-[96px] object-contain lg:w-[120px]"
+                  class="h-auto w-full max-w-[112px] object-contain lg:max-w-[120px]"
                 />
 
                 <h3
                   class="mt-[18px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[16px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
-                  BECOME YOUR BEST
+                  BECOME<br class="md:block lg:hidden" />
+                  YOUR BEST
                 </h3>
 
                 <p
-                  class="mt-[14px] max-w-[150px] text-center font-['Inter'] text-[16px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[12px] max-w-[150px] text-center font-['Inter'] text-[14px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] lg:text-[16px]"
                 >
                   Complete your journey and step into your next chapter.
                 </p>
               </div>
             </div>
 
-            <!-- Mobile Layout -->
-            <div class="grid grid-cols-2 gap-x-[20px] gap-y-[36px] md:hidden">
+            <!-- Mobile -->
+            <div class="grid grid-cols-2 gap-x-[26px] gap-y-[38px] md:hidden">
               <!-- Step 1 -->
               <div class="flex flex-col items-center text-center">
                 <img
                   src="./assets/images/step-icon-1.webp"
                   alt="Choose Your Path"
-                  class="h-auto w-[112px] object-contain"
+                  class="h-auto w-full max-w-[110px] object-contain"
                 />
 
                 <h3
-                  class="mt-[14px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
+                  class="mt-[12px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
                   CHOOSE YOUR PATH
                 </h3>
 
                 <p
-                  class="mt-[10px] max-w-[160px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[8px] max-w-[155px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
                 >
                   Pick the 49-day journey that calls to your heart.
                 </p>
@@ -638,23 +662,23 @@
                 <img
                   src="./assets/images/step-arrow.webp"
                   alt="Arrow"
-                  class="absolute left-[-15px] top-[50px] h-auto w-[16px] object-contain"
+                  class="absolute left-[-18px] top-[48px] h-auto w-[16px] object-contain"
                 />
 
                 <img
-                  src="./assets/images/step-icon-2.webp"
+                  src="./assets/images/step-icon-2.png"
                   alt="Daily Practice"
-                  class="h-auto w-[112px] object-contain"
+                  class="h-auto w-full max-w-[110px] object-contain"
                 />
 
                 <h3
-                  class="mt-[14px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
+                  class="mt-[12px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
                   DAILY PRACTICE
                 </h3>
 
                 <p
-                  class="mt-[10px] max-w-[160px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[8px] max-w-[155px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
                 >
                   Follow guided practices designed for real life.
                 </p>
@@ -665,17 +689,17 @@
                 <img
                   src="./assets/images/step-icon-3.webp"
                   alt="Track and Reflect"
-                  class="h-auto w-[112px] object-contain"
+                  class="h-auto w-full max-w-[110px] object-contain"
                 />
 
                 <h3
-                  class="mt-[14px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
+                  class="mt-[12px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
                   TRACK &amp; REFLECT
                 </h3>
 
                 <p
-                  class="mt-[10px] max-w-[160px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[8px] max-w-[155px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
                 >
                   Build habits, track progress, and journal your growth.
                 </p>
@@ -686,23 +710,23 @@
                 <img
                   src="./assets/images/step-arrow.webp"
                   alt="Arrow"
-                  class="absolute left-[-15px] top-[50px] h-auto w-[16px] object-contain"
+                  class="absolute left-[-18px] top-[48px] h-auto w-[16px] object-contain"
                 />
 
                 <img
                   src="./assets/images/step-icon-4.webp"
                   alt="Become Your Best"
-                  class="h-auto w-[112px] object-contain"
+                  class="h-auto w-full max-w-[110px] object-contain"
                 />
 
                 <h3
-                  class="mt-[14px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
+                  class="mt-[12px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent"
                 >
                   BECOME YOUR BEST
                 </h3>
 
                 <p
-                  class="mt-[10px] max-w-[160px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
+                  class="mt-[8px] max-w-[155px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56]"
                 >
                   Complete your journey and step into your next chapter.
                 </p>
@@ -712,15 +736,342 @@
         </div>
 
         <!-- Divider -->
-        <div
-          class="relative left-1/2 mt-[24px] h-[1.5px] -translate-x-1/2 bg-[#E7DFD4] md:mt-[32px]"
-        ></div>
+        <div class="mt-[28px] h-[1.5px] w-full bg-[#E7DFD4] md:mt-[42px]"></div>
 
-        <!-- Bottom Area -->
-        <div class="mt-[24px]">bottom</div>
+        <!-- Feature Grid -->
+        <!-- Feature Grid -->
+        <div class="pt-[28px] md:pt-[48px]">
+          <div class="grid grid-cols-2 gap-y-[44px] md:grid-cols-5 md:gap-y-0">
+            <!-- Item 1 -->
+            <div
+              class="flex flex-col items-center border-r border-[#E7DFD4] px-2 pb-0 text-center md:px-6 md:pb-0"
+            >
+              <img
+                src="./assets/images/feature-icon-1.webp"
+                alt="Guided Lessons"
+                class="h-auto w-full max-w-[110px] object-contain md:max-w-[140px]"
+              />
+
+              <h3
+                class="mt-[16px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent md:mt-[32px] md:text-[18px]"
+              >
+                GUIDED LESSONS
+              </h3>
+
+              <p
+                class="mt-[10px] max-w-[175px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] md:mt-[14px] md:text-[16px]"
+              >
+                Timeless wisdom broken down into daily guidance.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col items-center px-2 pb-0 text-center md:border-r md:border-[#E7DFD4] md:px-6 md:pb-0"
+            >
+              <img
+                src="./assets/images/feature-icon-2.webp"
+                alt="Daily Practices"
+                class="h-auto w-full max-w-[110px] object-contain md:max-w-[140px]"
+              />
+
+              <h3
+                class="mt-[16px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent md:mt-[32px] md:text-[18px]"
+              >
+                DAILY PRACTICES
+              </h3>
+
+              <p
+                class="mt-[10px] max-w-[175px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] md:mt-[14px] md:text-[16px]"
+              >
+                Simple, practical exercises that build lasting change.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="flex flex-col items-center border-r border-[#E7DFD4] px-2 pb-0 text-center md:px-6 md:pb-0"
+            >
+              <img
+                src="./assets/images/feature-icon-3.webp"
+                alt="Journal and Reflect"
+                class="h-auto w-full max-w-[110px] object-contain md:max-w-[140px]"
+              />
+
+              <h3
+                class="mt-[16px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent md:mt-[32px] md:text-[18px]"
+              >
+                JOURNAL &amp; REFLECT
+              </h3>
+
+              <p
+                class="mt-[10px] max-w-[175px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] md:mt-[14px] md:text-[16px]"
+              >
+                Deepen self-awareness and integrate your learnings.
+              </p>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="flex flex-col items-center px-2 pb-0 text-center md:border-r md:border-[#E7DFD4] md:px-6 md:pb-0"
+            >
+              <img
+                src="./assets/images/feature-icon-4.webp"
+                alt="Progress Tracker"
+                class="h-auto w-full max-w-[110px] object-contain md:max-w-[140px]"
+              />
+
+              <h3
+                class="mt-[16px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent md:mt-[32px] md:text-[18px]"
+              >
+                PROGRESS TRACKER
+              </h3>
+
+              <p
+                class="mt-[10px] max-w-[175px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] md:mt-[14px] md:text-[16px]"
+              >
+                Visualize your growth and stay inspired along the way.
+              </p>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="col-span-2 mx-auto flex max-w-[220px] flex-col items-center px-2 text-center md:col-span-1 md:max-w-none md:px-6"
+            >
+              <img
+                src="./assets/images/feature-icon-5.webp"
+                alt="Beautiful Experience"
+                class="h-auto w-full max-w-[110px] object-contain md:max-w-[140px]"
+              />
+
+              <h3
+                class="mt-[16px] bg-[linear-gradient(348.01deg,#535A41_8.67%,#7A7B5D_91.15%)] bg-clip-text text-center font-libre text-[14px] font-bold leading-[140%] tracking-[0] text-transparent md:mt-[32px] md:text-[18px]"
+              >
+                BEAUTIFUL EXPERIENCE
+              </h3>
+
+              <p
+                class="mt-[10px] max-w-[175px] text-center font-['Inter'] text-[12px] font-normal leading-[170%] tracking-[0] text-[#4A4C56] md:mt-[14px] md:text-[16px]"
+              >
+                Calming visuals and thoughtful design that support focus.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- App Showcase Section Start -->
+    <section
+      id="app-showcase"
+      class="w-full bg-[url('./assets/images/app-showcase-bg.webp')] bg-cover bg-center bg-no-repeat py-[28px] md:py-[50px] lg:py-[80px]"
+    >
+      <div class="mx-auto w-full max-w-[1280px] px-5 md:px-9 lg:px-0">
+        <div
+          class="showcase-coustome flex flex-col items-center gap-[32px] md:flex-row md:items-center md:justify-between md:gap-[28px] lg:gap-[48px]"
+        >
+          <!-- Left Content -->
+          <div class="text-center md:text-left">
+            <img
+              src="./assets/images/app-showcase-divider.webp"
+              alt="Divider"
+              class="mx-auto h-auto w-full max-w-[220px] object-contain md:mx-0 md:max-w-[250px] lg:max-w-[315px]"
+            />
 
+            <h2
+              class="mx-auto mt-[12px] max-w-[258px] text-center font-libre text-[24px] font-bold leading-[140%] tracking-[0] text-[#5C6248] md:mx-0 md:max-w-[328.18px] md:text-left md:text-[32px] lg:max-w-[400px] lg:text-[36px]"
+            >
+              <span class="block whitespace-nowrap">A sanctuary in your</span>
+              <span class="block whitespace-nowrap">pocket.</span>
+            </h2>
+
+            <p
+              class="mx-auto mt-[16px] max-w-[319px] text-center font-['Inter'] text-[12px] font-medium leading-[150%] tracking-[0] text-[#2F2A24] md:mx-0 md:max-w-[328.18px] md:text-left md:text-[18px] lg:max-w-[400px] lg:text-[20px]"
+            >
+              <span class="inline-block whitespace-nowrap">
+                Your daily companion for self-mastery
+              </span>
+              <br />
+              <span class="inline-block whitespace-nowrap">
+                and inner peace.
+              </span>
+            </p>
+
+            <!-- Desktop / Tablet Store Buttons -->
+            <div
+              class="mt-[22px] hidden items-center justify-center gap-[12px] md:flex md:justify-start"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex transition-all duration-300 hover:-translate-y-[2px] hover:opacity-90"
+              >
+                <img
+                  src="./assets/images/app-store.webp"
+                  alt="Download on the App Store"
+                  class="h-auto w-full max-w-[134px] object-contain"
+                />
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex transition-all duration-300 hover:-translate-y-[2px] hover:opacity-90"
+              >
+                <img
+                  src="./assets/images/google-play.webp"
+                  alt="Get it on Google Play"
+                  class="h-auto w-full max-w-[134px] object-contain"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Right App Preview Images -->
+          <div class="w-full">
+            <!-- Desktop / Tablet Layout -->
+            <div
+              class="hidden items-center justify-end gap-[14px] md:flex lg:gap-[20px]"
+            >
+              <img
+                src="./assets/images/app-card-day.webp"
+                alt="Day Journey Preview"
+                class="h-auto w-full max-w-[12px] object-contain lg:max-w-[180px]"
+              />
+
+              <img
+                src="./assets/images/app-phone.webp"
+                alt="App Phone Preview"
+                class="h-auto w-full max-w-[128px] object-contain lg:max-w-[230px]"
+              />
+
+              <img
+                src="./assets/images/app-card-progress.webp"
+                alt="Progress Preview"
+                class="h-auto w-full max-w-[128px] object-contain lg:max-w-[180px]"
+              />
+
+              <img
+                src="./assets/images/app-card-growth.webp"
+                alt="Growth Preview"
+                class="h-auto w-full max-w-[128px] object-contain lg:max-w-[180px]"
+              />
+            </div>
+
+            <!-- Mobile Layout -->
+            <div
+              class="grid grid-cols-2 items-center gap-x-[16px] gap-y-[18px] md:hidden"
+            >
+              <div class="flex justify-center">
+                <img
+                  src="./assets/images/app-card-day.webp"
+                  alt="Day Journey Preview"
+                  class="h-auto w-full max-w-[130px] object-contain"
+                />
+              </div>
+
+              <div class="flex justify-center">
+                <img
+                  src="./assets/images/app-phone.webp"
+                  alt="App Phone Preview"
+                  class="h-auto w-full max-w-[150px] object-contain"
+                />
+              </div>
+
+              <div class="flex justify-center">
+                <img
+                  src="./assets/images/app-card-progress.webp"
+                  alt="Progress Preview"
+                  class="h-auto w-full max-w-[130px] object-contain"
+                />
+              </div>
+
+              <div class="flex justify-center">
+                <img
+                  src="./assets/images/app-card-growth.webp"
+                  alt="Growth Preview"
+                  class="h-auto w-full max-w-[130px] object-contain"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile Store Buttons -->
+            <div
+              class="mt-[24px] flex items-center justify-center gap-[12px] md:hidden"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex transition-all duration-300 hover:-translate-y-[2px] hover:opacity-90"
+              >
+                <img
+                  src="./assets/images/app-store.webp"
+                  alt="Download on the App Store"
+                  class="h-auto w-full max-w-[134px] object-contain"
+                />
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex transition-all duration-300 hover:-translate-y-[2px] hover:opacity-90"
+              >
+                <img
+                  src="./assets/images/google-play.webp"
+                  alt="Get it on Google Play"
+                  class="h-auto w-full max-w-[134px] object-contain"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App Showcase Section End -->
+
+    <!--  Real Stories Section ::::TESTIMONIALS-->
+  <section
+      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px]"
+    >
+      <!-- Left Overlay Image -->
+      <img
+        src="./assets/images/testimonial-left-overlay.webp"
+        alt="Left Image"
+        class="pointer-events-none absolute bottom-0 left-0 z-[1] hidden h-auto w-[120px] select-none object-contain md:block lg:w-[170px]"
+      />
+
+      <!-- Right Overlay Image -->
+      <img
+        src="./assets/images/testimonial-right-overlay.webp.webp"
+        alt="testimonial-right-overlay Image"
+        class="pointer-events-none absolute bottom-0 right-0 z-[1] hidden h-auto w-[120px] select-none object-contain md:block lg:w-[170px]"
+      />
+
+      <!-- Main Content -->
+      <div class="relative z-[5] mx-auto w-full max-w-[1280px]">
+        <!-- title description -->
+        <div class="flex flex-col items-center justify-center text-center">
+          <img
+            src="./assets/images/path-divider.webp"
+            alt="Divider"
+            class="h-auto w-full max-w-[180px] object-contain md:max-w-[220px]"
+          />
+
+          <h2
+            class="mx-auto mt-3 max-w-[231px] text-center font-libre text-[24px] font-bold leading-[140%] tracking-[0] text-[#5C6248] md:max-w-none md:text-[32px] lg:text-[36px]"
+          >
+            Choose your path. Take your vow.
+          </h2>
+        </div>
+
+       
+
+        
+      </div>
+    </section>
     <!-- CTA Section Start-->
     <section
       class="bg-[url('./assets/images/boootm-cta.webp')] bg-cover bg-center pt-[204px] pb-[281px] justify-center flex flex-col items-center"
