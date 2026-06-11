@@ -51,3 +51,64 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleHeaderScroll);
   handleHeaderScroll();
 });
+// swiper slider js function s
+document.addEventListener("DOMContentLoaded", function () {
+  const testimonialEl = document.querySelector(".testimonialSwiper");
+
+  if (testimonialEl) {
+    new Swiper(".testimonialSwiper", {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 14,
+      speed: 700,
+      loop: true,
+      grabCursor: true,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+      pagination: {
+        el: ".testimonial-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+    });
+  }
+});
+// accordian function
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const button = item.querySelector(".faq-toggle");
+    const content = item.querySelector(".faq-content");
+    const icon = item.querySelector("i");
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("faq-open");
+
+      item.classList.toggle("faq-open");
+
+      if (isOpen) {
+        content.style.maxHeight = "0px";
+        icon.classList.remove("rotate-180");
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add("rotate-180");
+      }
+    });
+  });
+});

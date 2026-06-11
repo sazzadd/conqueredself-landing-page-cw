@@ -863,7 +863,7 @@
     <!-- App Showcase Section Start -->
     <section
       id="app-showcase"
-      class="w-full bg-[url('./assets/images/app-showcase-bg.webp')] bg-cover bg-center bg-no-repeat py-[28px] md:py-[50px] lg:py-[80px]"
+      class="w-full bg-[#FBF3E7] bg-[url('./assets/images/testimonial-mobile-bg.webp')] bg-cover bg-center bg-no-repeat py-[28px] md:bg-[url('./assets/images/app-showcase-bg.webp')] md:py-[50px] lg:py-[80px]"
     >
       <div class="mx-auto w-full max-w-[1280px] px-5 md:px-9 lg:px-0">
         <div
@@ -1033,26 +1033,29 @@
     <!-- App Showcase Section End -->
 
     <!--  Real Stories Section ::::TESTIMONIALS-->
-  <section
-      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px]"
+    <!-- Real Stories Section :::: TESTIMONIALS -->
+    <!-- FAQ section start  -->
+    <section
+      id="reviews"
+      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
     >
       <!-- Left Overlay Image -->
       <img
         src="./assets/images/testimonial-left-overlay.webp"
         alt="Left Image"
-        class="pointer-events-none absolute bottom-0 left-0 z-[1] hidden h-auto w-[120px] select-none object-contain md:block lg:w-[170px]"
+        class="pointer-events-none absolute bottom-0 left-0 z-[1] h-auto w-[150px] select-none object-contain md:w-[190px] lg:w-[260px]"
       />
 
       <!-- Right Overlay Image -->
       <img
-        src="./assets/images/testimonial-right-overlay.webp.webp"
-        alt="testimonial-right-overlay Image"
-        class="pointer-events-none absolute bottom-0 right-0 z-[1] hidden h-auto w-[120px] select-none object-contain md:block lg:w-[170px]"
+        src="./assets/images/testimonial-right-overlay.webp"
+        alt="Right Image"
+        class="pointer-events-none absolute bottom-0 right-0 z-[1] h-auto w-[130px] select-none object-contain md:w-[180px] lg:w-[240px]"
       />
 
       <!-- Main Content -->
       <div class="relative z-[5] mx-auto w-full max-w-[1280px]">
-        <!-- title description -->
+        <!-- Title -->
         <div class="flex flex-col items-center justify-center text-center">
           <img
             src="./assets/images/path-divider.webp"
@@ -1061,17 +1064,724 @@
           />
 
           <h2
-            class="mx-auto mt-3 max-w-[231px] text-center font-libre text-[24px] font-bold leading-[140%] tracking-[0] text-[#5C6248] md:max-w-none md:text-[32px] lg:text-[36px]"
+            class="mx-auto mt-3 max-w-[320px] text-center font-libre text-[24px] font-bold leading-[140%] tracking-[0] text-[#5C6248] md:max-w-none md:text-[32px] lg:text-[36px]"
           >
-            Choose your path. Take your vow.
+            <span>Real stories. Real</span>
+            <br class="md:hidden" />
+            <span> transformation.</span>
           </h2>
         </div>
 
-       
+        <!-- Testimonial Slider -->
+        <div class="mt-[24px] md:mt-[32px] lg:mt-[48px]">
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper pb-[48px] md:pb-[56px]">
+              <!-- Card 01 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "ConqueredSelf gave me the structure I needed to rebuild
+                      my life from the inside out."
+                    </p>
 
-        
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-1.webp"
+                        alt="Michael T."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Michael T.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Stoic Wisdom Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 02 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "The daily practices are simple but powerful. I feel more
+                      peaceful and focused than ever."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-2.webp"
+                        alt="Elena R."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Elena R.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Mindful Presence Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 03 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "49 days changed me more than years of motivation and
+                      wishful thinking."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-3.webp"
+                        alt="David L."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          David L.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Self-Mastery Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 04 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "ConqueredSelf gave me the structure I needed to rebuild
+                      my life from the inside out."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-4.webp"
+                        alt="Michael T."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Michael T.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Stoic Wisdom Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Duplicate Card 05 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "ConqueredSelf gave me the structure I needed to rebuild
+                      my life from the inside out."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-1.webp"
+                        alt="Michael T."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Michael T.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Stoic Wisdom Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Duplicate Card 06 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "The daily practices are simple but powerful. I feel more
+                      peaceful and focused than ever."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-2.webp"
+                        alt="Elena R."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Elena R.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Mindful Presence Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Duplicate Card 07 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "49 days changed me more than years of motivation and
+                      wishful thinking."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-3.webp"
+                        alt="David L."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          David L.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Self-Mastery Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Duplicate Card 08 -->
+              <div class="swiper-slide !h-auto">
+                <div
+                  class="h-full rounded-[24px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+                >
+                  <div
+                    class="flex h-full min-h-[220px] flex-col justify-between rounded-[23px] bg-[#FBF3E7] p-[12px] md:min-h-[232px] md:p-[24px] lg:min-h-[254px] lg:p-[28px]"
+                  >
+                    <p
+                      class="font-libre whitespace-normal break-words text-[14px] font-normal italic leading-[170%] tracking-[0] text-[#4A4C56] md:text-[18px] lg:text-[20px]"
+                    >
+                      "ConqueredSelf gave me the structure I needed to rebuild
+                      my life from the inside out."
+                    </p>
+
+                    <div
+                      class="mt-[18px] flex items-center gap-[10px] md:gap-[12px]"
+                    >
+                      <img
+                        src="./assets/images/reviewer-4.webp"
+                        alt="Michael T."
+                        class="h-[42px] w-[42px] rounded-full object-cover md:h-[56px] md:w-[56px]"
+                      />
+                      <div class="min-w-0">
+                        <h4
+                          class="font-libre text-[15px] font-bold leading-[140%] text-[#1F1B17] md:text-[18px]"
+                        >
+                          Michael T.
+                        </h4>
+                        <p
+                          class="mt-[2px] whitespace-normal break-words font-['Inter'] text-[10px] font-normal leading-[150%] text-[#4A4C56] md:text-[12px]"
+                        >
+                          Stoic Wisdom Path
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="testimonial-pagination"></div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- FAQ section End -->
+    <!-- FAQ Section Start -->
+    <section
+      id="faq"
+      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
+    >
+      <!-- Left Overlay -->
+      <img
+        src="./assets/images/testimonial-left-overlay.webp"
+        alt="Left Decoration"
+        class="pointer-events-none absolute bottom-0 left-0 z-[1] h-auto w-[150px] select-none object-contain md:w-[190px] lg:w-[260px]"
+      />
+
+      <!-- Right Overlay -->
+      <img
+        src="./assets/images/testimonial-right-overlay.webp"
+        alt="Right Decoration"
+        class="pointer-events-none absolute top-0 right-0 z-[1] h-auto w-[130px] select-none object-contain md:w-[180px] lg:w-[240px]"
+      />
+
+      <div class="relative z-[5] mx-auto w-full max-w-[1280px]">
+        <!-- Title -->
+        <div class="flex w-full items-center justify-center text-center">
+          <div
+            class="flex w-full items-center justify-center gap-[10px] md:gap-[18px] lg:gap-[24px]"
+          >
+            <img
+              src="./assets/images/faq-title-divider.webp"
+              alt="Divider"
+              class="h-auto w-full max-w-[130px] object-contain md:max-w-[243px] lg:max-w-[352px]"
+            />
+
+            <h2
+              class="shrink-0 font-libre text-[24px] font-bold uppercase leading-[140%] tracking-[0] text-[#5C6248] md:text-[32px] lg:text-[36px]"
+            >
+              FAQ
+            </h2>
+
+            <img
+              src="./assets/images/faq-title-divider.webp"
+              alt="Divider"
+              class="h-auto w-full max-w-[130px] rotate-180 object-contain md:max-w-[243px] lg:max-w-[352px]"
+            />
+          </div>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="mx-auto mt-[28px] w-full max-w-[1120px] md:mt-[40px]">
+          <!-- Mobile Order -->
+          <div class="flex flex-col gap-[14px] md:hidden">
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >What is a 49-day journey?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  A guided 49-day self-mastery practice designed to help you
+                  build clarity, discipline, and inner peace through daily
+                  reflection.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >Can I do multiple journeys?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  Yes, you can complete one journey first and then begin another
+                  path when you are ready.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >How much time do I need each day?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  Most daily practices can be completed in around 10 to 15
+                  minutes.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >What if I miss a day?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  You can continue from where you left off. The goal is steady
+                  progress, not perfection.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >Is this based on religion?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  No, the experience is built around timeless wisdom,
+                  reflection, and personal growth.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+            >
+              <button
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+              >
+                <span
+                  class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                  >Is there a free trial?</span
+                >
+                <i
+                  class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div
+                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                >
+                  Yes, a free trial can be offered so users can explore the
+                  experience before continuing.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop / Tablet Separate Columns -->
+          <div class="hidden grid-cols-2 gap-x-[24px] md:grid">
+            <!-- Left Column -->
+            <div class="flex flex-col gap-[24px]">
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >What is a 49-day journey?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    A guided 49-day self-mastery practice designed to help you
+                    build clarity, discipline, and inner peace through daily
+                    reflection.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >How much time do I need each day?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    Most daily practices can be completed in around 10 to 15
+                    minutes.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >Is this based on religion?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    No, the experience is built around timeless wisdom,
+                    reflection, and personal growth.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-col gap-[24px]">
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >Can I do multiple journeys?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    Yes, you can complete one journey first and then begin
+                    another path when you are ready.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >What if I miss a day?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    You can continue from where you left off. The goal is steady
+                    progress, not perfection.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
+              >
+                <button
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                >
+                  <span
+                    class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
+                    >Is there a free trial?</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
+                  ></i>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                  >
+                    Yes, a free trial can be offered so users can explore the
+                    experience before continuing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- FAQ section End -->
     <!-- CTA Section Start-->
     <section
       class="bg-[url('./assets/images/boootm-cta.webp')] bg-cover bg-center pt-[204px] pb-[281px] justify-center flex flex-col items-center"

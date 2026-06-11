@@ -90,3 +90,61 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* Testimonial Swiper Fix */
+.testimonialSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonialSwiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonialSwiper .swiper-slide {
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Mobile: 2 cards */
+.testimonialSwiper .swiper-slide {
+  width: calc((100% - 14px) / 2) !important;
+}
+
+/* Tablet: 3 cards */
+@media (min-width: 768px) {
+  .testimonialSwiper .swiper-slide {
+    width: calc((100% - 48px) / 3) !important;
+  }
+}
+
+/* Desktop: 4 cards */
+@media (min-width: 1024px) {
+  .testimonialSwiper .swiper-slide {
+    width: calc((100% - 72px) / 4) !important;
+  }
+}
+
+/* Pagination */
+.testimonial-pagination.swiper-pagination-bullets {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 !important;
+  opacity: 1;
+  border-radius: 9999px;
+  border: 1px solid #c68435;
+  background: transparent;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  border-color: transparent;
+  background: linear-gradient(92.79deg, #a66413 -0.26%, #d09956 102.34%);
+}
