@@ -163,7 +163,8 @@
     <!-- Header End -->
     <!-- Banner Section start-->
     <section
-      class="pt-[163px] pb-[208px] w-full bg-[url('./assets/images/hero-banner.webp')] bg-cover bg-center bg-no-repeat"
+      id="home"
+      class="pt-[163px] scroll-mt-[100px] pb-[208px] w-full bg-[url('./assets/images/hero-banner.webp')] bg-cover bg-center bg-no-repeat"
     >
       <div class="max-w-[1280px] w-full mx-auto px-5 flex flex-col">
         <!-- title   -->
@@ -201,7 +202,7 @@
         >
           <!-- Primary Button -->
           <a
-            href="#"
+            href="for-whom"
             class="w-[244px] md:py-[12px] py-[8px] rounded-[4px] bg-[#525436] text-[#F8F3E6] font-inter-tight font-semibold text-[16px] leading-[180%] tracking-[0] flex items-center justify-center text-center transition-all duration-300 ease-out hover:bg-[#42442b] hover:-translate-y-[1px] hover:shadow-[0_12px_28px_rgba(82,84,54,0.28)] active:translate-y-0"
           >
             BEGIN YOUR 49-DAY PATH
@@ -209,7 +210,7 @@
 
           <!-- Secondary Button with Gradient Border -->
           <a
-            href="#"
+            href="app-showcase"
             class="w-[244px] rounded-[4px] p-[1.38px] bg-[linear-gradient(348.01deg,rgba(83,90,65,0.7)_8.67%,rgba(122,123,93,0.7)_91.15%)] transition-all duration-300 ease-out hover:-translate-y-[1px] hover:shadow-[0_12px_28px_rgba(82,84,54,0.20)] active:translate-y-0"
           >
             <span
@@ -225,128 +226,132 @@
     <!-- Counter Section Start-->
 
     <!-- Counter Section -->
+    <!-- Counter Section Start -->
     <section
-      id="counter"
-      class="w-full py-[20px] md:py-[40px] lg:py-[40px] px-4 bg-[#E9D59E] shadow-[0_10px_40px_#BA7E3314] relative overflow-hidden"
+      id="why"
+      class="scroll-mt-[100px] relative w-full overflow-hidden bg-[#FDF8ED] px-4 py-[20px] shadow-[0_10px_40px_#BA7E3314] md:py-[40px] lg:py-[40px]"
     >
-      <!-- Left and Right Overlay Images -->
+      <!-- Left Overlay Image -->
       <img
         src="./assets/images/counter-left-overlay.png"
         alt="Left Image"
-        class="absolute top-0 left-0 w-auto h-full object-contain pointer-events-none select-none hidden md:block"
+        class="pointer-events-none absolute left-0 top-0 hidden h-full w-auto select-none object-contain md:block"
       />
 
+      <!-- Right Overlay Image -->
       <img
         src="./assets/images/counter-right-overlay.png"
         alt="Right Image"
-        class="absolute top-0 right-0 w-auto h-full object-contain pointer-events-none select-none hidden md:block"
+        class="pointer-events-none absolute right-0 top-0 hidden h-full w-auto select-none object-contain md:block"
       />
 
       <!-- Counter Content -->
-      <div class="max-w-[1280px] w-full mx-auto px-3 sm:px-5 relative z-[2]">
+      <div
+        class="relative z-[2] mx-auto w-full max-w-[1280px] px-1 sm:px-3 md:px-5 lg:px-0"
+      >
         <div class="grid grid-cols-4 items-start gap-0 md:gap-4 lg:gap-6">
-          <!-- Counter Item 1 -->
+          <!-- Counter Item 01 -->
           <div
-            class="counter-item min-w-0 flex items-start justify-center gap-[5px] md:gap-4 lg:gap-5 px-[4px] md:pr-4 lg:pr-6 border-r border-[#525436]/15"
+            class="counter-item flex min-w-0 items-start justify-center gap-[5px] border-r border-[#525436]/15 px-[3px] md:gap-4 md:pr-4 lg:gap-5 lg:pr-6"
           >
             <img
               src="./assets/images/c1.webp"
               alt="Journeys Started"
-              class="mt-[1px] w-[14px] sm:w-[18px] md:w-[34px] lg:w-[44px] h-auto object-contain shrink-0"
+              class="mt-[1px] h-auto w-[14px] shrink-0 object-contain sm:w-[18px] md:w-[34px] lg:w-[44px]"
             />
 
             <div class="min-w-0">
               <h3
-                class="font-libre font-bold text-[#525436] text-[14px] md:text-[28px] lg:text-[40px] leading-[110%] tracking-[0] whitespace-nowrap"
+                class="whitespace-nowrap font-libre text-[14px] font-bold leading-[110%] tracking-[0] text-[#525436] md:text-[28px] lg:text-[40px]"
               >
                 28,632+
               </h3>
 
               <p
-                class="mt-[3px] md:mt-[6px] font-['Inter'] font-medium text-[#483B2B] text-[6px] md:text-[14px] lg:text-[16px] leading-[150%] tracking-[0] whitespace-nowrap"
+                class="mt-[3px] max-w-[46px] whitespace-normal break-words font-['Inter'] text-[6px] font-medium leading-[150%] tracking-[0] text-[#483B2B] sm:max-w-[62px] sm:text-[8px] md:mt-[6px] md:max-w-none md:whitespace-nowrap md:text-[16px] lg:text-[20px]"
               >
                 Journeys Started
               </p>
             </div>
           </div>
 
-          <!-- Counter Item 2 -->
+          <!-- Counter Item 02 -->
           <div
-            class="counter-item min-w-0 flex items-start justify-center gap-[5px] md:gap-4 lg:gap-5 px-[4px] md:pr-4 lg:pr-6 border-r border-[#525436]/15"
+            class="counter-item flex min-w-0 items-start justify-center gap-[5px] border-r border-[#525436]/15 px-[3px] md:gap-4 md:pr-4 lg:gap-5 lg:pr-6"
           >
             <img
               src="./assets/images/c2.webp"
               alt="Days Committed"
-              class="mt-[1px] w-[14px] sm:w-[18px] md:w-[34px] lg:w-[44px] h-auto object-contain shrink-0"
+              class="mt-[1px] h-auto w-[14px] shrink-0 object-contain sm:w-[18px] md:w-[34px] lg:w-[44px]"
             />
 
             <div class="min-w-0">
               <h3
-                class="font-libre font-bold text-[#525436] text-[14px] md:text-[28px] lg:text-[40px] leading-[110%] tracking-[0] whitespace-nowrap"
+                class="whitespace-nowrap font-libre text-[14px] font-bold leading-[110%] tracking-[0] text-[#525436] md:text-[28px] lg:text-[40px]"
               >
                 2.4M+
               </h3>
 
               <p
-                class="mt-[3px] md:mt-[6px] font-['Inter'] font-medium text-[#483B2B] text-[6px] md:text-[14px] lg:text-[16px] leading-[150%] tracking-[0] whitespace-nowrap"
+                class="mt-[3px] max-w-[46px] whitespace-normal break-words font-['Inter'] text-[6px] font-medium leading-[150%] tracking-[0] text-[#483B2B] sm:max-w-[62px] sm:text-[8px] md:mt-[6px] md:max-w-none md:whitespace-nowrap md:text-[16px] lg:text-[20px]"
               >
                 Days Committed
               </p>
             </div>
           </div>
 
-          <!-- Counter Item 3 -->
+          <!-- Counter Item 03 -->
           <div
-            class="counter-item min-w-0 flex items-start justify-center gap-[5px] md:gap-4 lg:gap-5 px-[4px] md:pr-4 lg:pr-6 border-r border-[#525436]/15"
+            class="counter-item flex min-w-0 items-start justify-center gap-[5px] border-r border-[#525436]/15 px-[3px] md:gap-4 md:pr-4 lg:gap-5 lg:pr-6"
           >
             <img
               src="./assets/images/c3.webp"
               alt="App Store Rating"
-              class="mt-[1px] w-[14px] sm:w-[18px] md:w-[34px] lg:w-[44px] h-auto object-contain shrink-0"
+              class="mt-[1px] h-auto w-[14px] shrink-0 object-contain sm:w-[18px] md:w-[34px] lg:w-[44px]"
             />
 
             <div class="min-w-0">
-              <div class="flex items-center gap-2">
+              <div class="flex min-w-0 items-center gap-[3px] md:gap-2">
                 <h3
-                  class="font-libre font-bold text-[#525436] text-[14px] md:text-[28px] lg:text-[40px] leading-[110%] tracking-[0] whitespace-nowrap"
+                  class="whitespace-nowrap font-libre text-[14px] font-bold leading-[110%] tracking-[0] text-[#525436] md:text-[28px] lg:text-[40px]"
                 >
                   4.9
                 </h3>
-                <span
-                  ><img
-                    src="./assets/images/Rating unit.png"
-                    alt="App Store Rating"
-                    class="mt-[1px] w-[14px] sm:w-[18px] md:w-[34px] lg:w-[44px] h-auto object-contain shrink-0"
-                /></span>
+
+                <img
+                  src="./assets/images/Rating unit.png"
+                  alt="Rating Star"
+                  class="h-auto w-[12px] shrink-0 object-contain sm:w-[16px] md:w-[28px] lg:w-[34px]"
+                />
               </div>
 
               <p
-                class="mt-[3px] md:mt-[6px] font-['Inter'] font-medium text-[#483B2B] text-[6px] md:text-[14px] lg:text-[16px] leading-[150%] tracking-[0] whitespace-nowrap"
+                class="mt-[3px] max-w-[46px] whitespace-normal break-words font-['Inter'] text-[6px] font-medium leading-[150%] tracking-[0] text-[#483B2B] sm:max-w-[62px] sm:text-[8px] md:mt-[6px] md:max-w-none md:whitespace-nowrap md:text-[16px] lg:text-[20px]"
               >
                 App Store Rating
               </p>
             </div>
           </div>
 
-          <!-- Counter Item 4 -->
+          <!-- Counter Item 04 -->
           <div
-            class="counter-item min-w-0 flex items-start justify-center gap-[5px] md:gap-4 lg:gap-5 px-[4px]"
+            class="counter-item flex min-w-0 items-start justify-center gap-[5px] px-[3px] md:gap-4 lg:gap-5"
           >
             <img
               src="./assets/images/c4.webp"
               alt="Life Changing Paths"
-              class="mt-[1px] w-[14px] sm:w-[18px] md:w-[34px] lg:w-[44px] h-auto object-contain shrink-0"
+              class="mt-[1px] h-auto w-[14px] shrink-0 object-contain sm:w-[18px] md:w-[34px] lg:w-[44px]"
             />
 
             <div class="min-w-0">
               <h3
-                class="font-libre font-bold text-[#525436] text-[14px] md:text-[28px] lg:text-[40px] leading-[110%] tracking-[0] whitespace-nowrap"
+                class="whitespace-nowrap font-libre text-[14px] font-bold leading-[110%] tracking-[0] text-[#525436] md:text-[28px] lg:text-[40px]"
               >
                 18+
               </h3>
 
               <p
-                class="mt-[3px] md:mt-[6px] font-['Inter'] font-medium text-[#483B2B] text-[6px] md:text-[14px] lg:text-[16px] leading-[150%] tracking-[0] whitespace-nowrap"
+                class="mt-[3px] max-w-[50px] whitespace-normal break-words font-['Inter'] text-[6px] font-medium leading-[150%] tracking-[0] text-[#483B2B] sm:max-w-[70px] sm:text-[8px] md:mt-[6px] md:max-w-none md:whitespace-nowrap md:text-[16px] lg:text-[20px]"
               >
                 Life-Changing Paths
               </p>
@@ -355,10 +360,12 @@
         </div>
       </div>
     </section>
-    <!-- Counter Section End-->
+    <!-- Counter Section End -->
+
     <!-- Choose your path Start-->
     <section
-      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px]"
+      id="for-whom"
+      class="relative w-full overflow-hidden scroll-mt-[100px] bg-[#FBF3E7] px-5 py-[28px] md:py-[48px]"
     >
       <!-- Left Overlay Image -->
       <img
@@ -445,7 +452,8 @@
     <!-- Process-Steps -->
 
     <section
-      class="relative w-full overflow-hidden bg-[#FDF9EF] px-5 py-[28px] md:py-[48px]"
+      id="features"
+      class="relative w-full overflow-hidden bg-[#FDF9EF] scroll-mt-[100px] px-5 py-[28px] md:py-[48px]"
     >
       <!-- Decorative Images -->
       <img
@@ -863,7 +871,7 @@
     <!-- App Showcase Section Start -->
     <section
       id="app-showcase"
-      class="w-full bg-[#FBF3E7] bg-[url('./assets/images/testimonial-mobile-bg.webp')] bg-cover bg-center bg-no-repeat py-[28px] md:bg-[url('./assets/images/app-showcase-bg.webp')] md:py-[50px] lg:py-[80px]"
+      class="w-full bg-[#FBF3E7] scroll-mt-[100px] bg-[url('./assets/images/testimonial-mobile-bg.webp')] bg-cover bg-center bg-no-repeat py-[28px] md:bg-[url('./assets/images/app-showcase-bg.webp')] md:py-[50px] lg:py-[80px]"
     >
       <div class="mx-auto w-full max-w-[1280px] px-5 md:px-9 lg:px-0">
         <div
@@ -1037,7 +1045,7 @@
     <!-- FAQ section start  -->
     <section
       id="reviews"
-      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
+      class="relative scroll-mt-[100px] w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
     >
       <!-- Left Overlay Image -->
       <img
@@ -1407,7 +1415,7 @@
     <!-- FAQ Section Start -->
     <section
       id="faq"
-      class="relative w-full overflow-hidden bg-[#FBF3E7] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
+      class="relative scroll-mt-[100px] w-full overflow-hidden bg-[#FCF8F0] px-5 py-[28px] md:py-[48px] lg:py-[56px]"
     >
       <!-- Left Overlay -->
       <img
@@ -1420,11 +1428,11 @@
       <img
         src="./assets/images/testimonial-right-overlay.webp"
         alt="Right Decoration"
-        class="pointer-events-none absolute top-0 right-0 z-[1] h-auto w-[130px] select-none object-contain md:w-[180px] lg:w-[240px]"
+        class="pointer-events-none absolute right-0 top-0 z-[1] h-auto w-[130px] select-none object-contain md:w-[180px] lg:w-[240px]"
       />
 
       <div class="relative z-[5] mx-auto w-full max-w-[1280px]">
-        <!-- Title -->
+        <!-- FAQ Title -->
         <div class="flex w-full items-center justify-center text-center">
           <div
             class="flex w-full items-center justify-center gap-[10px] md:gap-[18px] lg:gap-[24px]"
@@ -1451,27 +1459,30 @@
 
         <!-- FAQ Items -->
         <div class="mx-auto mt-[28px] w-full max-w-[1120px] md:mt-[40px]">
-          <!-- Mobile Order -->
-          <div class="flex flex-col gap-[14px] md:hidden">
+          <!-- Mobile FAQ List -->
+          <div class="faq-group flex flex-col gap-[14px] md:hidden">
+            <!-- Mobile FAQ Item 01 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >What is a 49-day journey?</span
                 >
+                  What is a 49-day journey?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   A guided 49-day self-mastery practice designed to help you
                   build clarity, discipline, and inner peace through daily
@@ -1480,25 +1491,28 @@
               </div>
             </div>
 
+            <!-- Mobile FAQ Item 02 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >Can I do multiple journeys?</span
                 >
+                  Can I do multiple journeys?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   Yes, you can complete one journey first and then begin another
                   path when you are ready.
@@ -1506,25 +1520,28 @@
               </div>
             </div>
 
+            <!-- Mobile FAQ Item 03 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >How much time do I need each day?</span
                 >
+                  How much time do I need each day?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   Most daily practices can be completed in around 10 to 15
                   minutes.
@@ -1532,25 +1549,28 @@
               </div>
             </div>
 
+            <!-- Mobile FAQ Item 04 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >What if I miss a day?</span
                 >
+                  What if I miss a day?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   You can continue from where you left off. The goal is steady
                   progress, not perfection.
@@ -1558,25 +1578,28 @@
               </div>
             </div>
 
+            <!-- Mobile FAQ Item 05 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >Is this based on religion?</span
                 >
+                  Is this based on religion?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   No, the experience is built around timeless wisdom,
                   reflection, and personal growth.
@@ -1584,25 +1607,28 @@
               </div>
             </div>
 
+            <!-- Mobile FAQ Item 06 -->
             <div
               class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
             >
               <button
-                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB]/90 px-[24px] py-[20px] text-left"
               >
                 <span
                   class="font-libre text-[14px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                  >Is there a free trial?</span
                 >
+                  Is there a free trial?
+                </span>
                 <i
                   class="fa-solid fa-chevron-down shrink-0 text-[16px] text-[#30271F] transition-transform duration-300"
                 ></i>
               </button>
+
               <div
                 class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div
-                  class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
+                  class="rounded-b-[11px] bg-[#FBF5EB]/90 px-[24px] pb-[18px] font-['Inter'] text-[13px] leading-[170%] text-[#4A4C56]"
                 >
                   Yes, a free trial can be offered so users can explore the
                   experience before continuing.
@@ -1611,29 +1637,32 @@
             </div>
           </div>
 
-          <!-- Desktop / Tablet Separate Columns -->
+          <!-- Desktop / Tablet FAQ Columns -->
           <div class="hidden grid-cols-2 gap-x-[24px] md:grid">
             <!-- Left Column -->
-            <div class="flex flex-col gap-[24px]">
+            <div class="faq-group flex flex-col gap-[24px]">
+              <!-- Desktop FAQ Left Item 01 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >What is a 49-day journey?</span
                   >
+                    What is a 49-day journey?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     A guided 49-day self-mastery practice designed to help you
                     build clarity, discipline, and inner peace through daily
@@ -1642,25 +1671,28 @@
                 </div>
               </div>
 
+              <!-- Desktop FAQ Left Item 02 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >How much time do I need each day?</span
                   >
+                    How much time do I need each day?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     Most daily practices can be completed in around 10 to 15
                     minutes.
@@ -1668,25 +1700,28 @@
                 </div>
               </div>
 
+              <!-- Desktop FAQ Left Item 03 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >Is this based on religion?</span
                   >
+                    Is this based on religion?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     No, the experience is built around timeless wisdom,
                     reflection, and personal growth.
@@ -1696,26 +1731,29 @@
             </div>
 
             <!-- Right Column -->
-            <div class="flex flex-col gap-[24px]">
+            <div class="faq-group flex flex-col gap-[24px]">
+              <!-- Desktop FAQ Right Item 01 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >Can I do multiple journeys?</span
                   >
+                    Can I do multiple journeys?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     Yes, you can complete one journey first and then begin
                     another path when you are ready.
@@ -1723,25 +1761,28 @@
                 </div>
               </div>
 
+              <!-- Desktop FAQ Right Item 02 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >What if I miss a day?</span
                   >
+                    What if I miss a day?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     You can continue from where you left off. The goal is steady
                     progress, not perfection.
@@ -1749,25 +1790,28 @@
                 </div>
               </div>
 
+              <!-- Desktop FAQ Right Item 03 -->
               <div
                 class="faq-item rounded-[12px] bg-[linear-gradient(92.79deg,rgba(166,100,19,0.4)_-0.26%,rgba(208,153,86,0.4)_102.34%)] p-[1px]"
               >
                 <button
-                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] py-[20px] text-left"
+                  class="faq-toggle flex w-full items-center justify-between gap-4 rounded-[11px] bg-[#FBF5EB] px-[24px] py-[20px] text-left"
                 >
                   <span
                     class="font-libre text-[20px] font-medium leading-[24px] tracking-[0] text-[#30271F]"
-                    >Is there a free trial?</span
                   >
+                    Is there a free trial?
+                  </span>
                   <i
                     class="fa-solid fa-chevron-down shrink-0 text-[20px] text-[#30271F] transition-transform duration-300"
                   ></i>
                 </button>
+
                 <div
                   class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <div
-                    class="rounded-b-[11px] bg-[rgba(252,248,240,0.5)] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
+                    class="rounded-b-[11px] bg-[#FBF5EB] px-[24px] pb-[20px] font-['Inter'] text-[14px] leading-[170%] text-[#4A4C56]"
                   >
                     Yes, a free trial can be offered so users can explore the
                     experience before continuing.
@@ -1780,8 +1824,8 @@
       </div>
     </section>
     <!-- FAQ Section End -->
+    <!-- FAQ Section Start -->
 
-    <!-- FAQ section End -->
     <!-- CTA Section Start-->
     <section
       class="bg-[url('./assets/images/boootm-cta.webp')] bg-cover bg-center pt-[204px] pb-[281px] justify-center flex flex-col items-center"
@@ -1822,6 +1866,7 @@
         </a>
       </div>
     </section>
+
     <!-- CTA Section end -->
     <!-- FOOTER -->
 
