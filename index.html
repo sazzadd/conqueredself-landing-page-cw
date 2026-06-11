@@ -33,63 +33,64 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Header Start -->
-    <header id="siteHeader" class="fixed top-0 left-0 z-50 w-full">
+    <!-- Header Start -->
+    <header id="siteHeader" class="fixed left-0 top-0 z-50 w-full">
       <div
         class="header-inner mx-auto flex max-w-[1280px] items-center justify-between px-5 py-8 lg:px-0"
       >
         <!-- Logo -->
-        <a href="#" class="header-logo block">
+        <a href="#home" class="header-logo block">
           <img
             src="./assets/images/logoo.webp"
-            class="w-full max-w-[162.19px] sm:max-w-[230px] md:max-w-[279.04px] lg:max-w-[324.38px] h-auto object-contain"
+            class="h-auto w-full max-w-[162.19px] object-contain sm:max-w-[230px] md:max-w-[279.04px] lg:max-w-[324.38px]"
             alt="Logo"
           />
         </a>
 
         <!-- Desktop Menu -->
-        <nav class="hidden lg:flex items-center gap-[48px]">
+        <nav class="hidden items-center gap-[48px] lg:flex">
           <a
             href="#why"
-            class="menu-link font-['Inter'] text-[16px] font-medium leading-[180%] tracking-[0] uppercase"
+            class="menu-link font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0]"
           >
             Why 49 Days
           </a>
 
           <a
             href="#features"
-            class="menu-link font-['Inter'] text-[16px] font-medium leading-[180%] tracking-[0] uppercase"
+            class="menu-link font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0]"
           >
             Features
           </a>
 
           <a
             href="#for-whom"
-            class="menu-link font-['Inter'] text-[16px] font-medium leading-[180%] tracking-[0] uppercase"
+            class="menu-link font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0]"
           >
             For Whom
           </a>
 
           <a
             href="#reviews"
-            class="menu-link font-['Inter'] text-[16px] font-medium leading-[180%] tracking-[0] uppercase"
+            class="menu-link font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0]"
           >
             Reviews
           </a>
 
           <a
-            href="#blog"
-            class="menu-link font-['Inter'] text-[16px] font-medium leading-[180%] tracking-[0] uppercase"
+            href="#faq"
+            class="menu-link font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0]"
           >
-            Blog
+            FAQ
           </a>
         </nav>
 
         <!-- Desktop Button -->
         <a
-          href="#"
-          class="hidden lg:flex h-[56px] min-w-[194px] items-center justify-center rounded-[4px] bg-[#525436] px-[28px] font-['Inter'] text-[16px] font-semibold leading-[180%] tracking-[0] text-white uppercase transition-all duration-300 ease-out hover:bg-[#42442b] hover:-translate-y-[2px] hover:shadow-[0_12px_28px_rgba(82,84,54,0.25)]"
+          href="#app-showcase"
+          class="hidden h-[56px] min-w-[194px] items-center justify-center rounded-[4px] bg-[#525436] px-[28px] font-inter-tight text-[16px] font-medium uppercase leading-[180%] tracking-[0] text-white transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-[#42442b] hover:shadow-[0_12px_28px_rgba(82,84,54,0.25)] lg:flex"
         >
           Begin Your Journey
         </a>
@@ -98,14 +99,13 @@
         <button
           id="menuBtn"
           type="button"
-          class="flex lg:hidden h-[42px] w-[42px] items-center justify-center rounded-[4px] bg-white/35 text-[24px] transition-all duration-300 hover:bg-white/60"
+          class="flex h-[46px] w-[46px] items-center justify-center rounded-[4px] bg-white/35 text-[28px] transition-all duration-300 hover:bg-white/60 lg:hidden"
           aria-label="Open menu"
         >
           <i id="menuIcon" class="fa-solid fa-bars toggle-gradient-icon"></i>
         </button>
       </div>
 
-      <!-- Mobile Menu -->
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
@@ -114,45 +114,47 @@
         <div
           class="rounded-[12px] bg-[#FFF8EB]/95 p-5 shadow-[0_16px_45px_rgba(72,59,43,0.16)] backdrop-blur-md"
         >
-          <nav class="flex flex-col gap-4">
+          <nav
+            class="flex flex-col items-center justify-center gap-4 text-center"
+          >
             <a
               href="#why"
-              class="mobile-link font-['Inter'] text-[15px] font-medium leading-[180%] uppercase text-[#483B2B]"
+              class="mobile-link font-inter-tight text-center text-[15px] font-medium uppercase leading-[180%] text-[#483B2B]"
             >
               Why 49 Days
             </a>
 
             <a
               href="#features"
-              class="mobile-link font-['Inter'] text-[15px] font-medium leading-[180%] uppercase text-[#483B2B]"
+              class="mobile-link font-inter-tight text-center text-[15px] font-medium uppercase leading-[180%] text-[#483B2B]"
             >
               Features
             </a>
 
             <a
               href="#for-whom"
-              class="mobile-link font-['Inter'] text-[15px] font-medium leading-[180%] uppercase text-[#483B2B]"
+              class="mobile-link font-inter-tight text-center text-[15px] font-medium uppercase leading-[180%] text-[#483B2B]"
             >
               For Whom
             </a>
 
             <a
               href="#reviews"
-              class="mobile-link font-['Inter'] text-[15px] font-medium leading-[180%] uppercase text-[#483B2B]"
+              class="mobile-link font-inter-tight text-center text-[15px] font-medium uppercase leading-[180%] text-[#483B2B]"
             >
               Reviews
             </a>
 
             <a
-              href="#blog"
-              class="mobile-link font-['Inter'] text-[15px] font-medium leading-[180%] uppercase text-[#483B2B]"
+              href="#faq"
+              class="mobile-link font-inter-tight text-center text-[15px] font-medium uppercase leading-[180%] text-[#483B2B]"
             >
-              Blog
+              FAQ
             </a>
 
             <a
-              href="#"
-              class="mt-2 flex h-[48px] items-center justify-center rounded-[4px] bg-[#525436] px-5 font-['Inter'] text-[14px] font-semibold leading-[180%] text-white uppercase transition-all duration-300 hover:bg-[#42442b]"
+              href="#app-showcase"
+              class="mt-2 flex h-[48px] w-full max-w-[244px] items-center justify-center rounded-[4px] bg-[#525436] px-5 text-center font-inter-tight text-[14px] font-medium uppercase leading-[180%] text-white transition-all duration-300 hover:bg-[#42442b]"
             >
               Begin Your Journey
             </a>
@@ -160,6 +162,7 @@
         </div>
       </div>
     </header>
+
     <!-- Header End -->
     <!-- Banner Section start-->
     <section
@@ -396,6 +399,11 @@
           >
             Choose your path. Take your vow.
           </h2>
+          <p
+            class="mt-[8px] text-center font-['Inter'] text-[16px] font-medium leading-[150%] tracking-[0] text-[#525436] md:mt-[8px] md:text-[18px] lg:mt-[16px] lg:text-[20px]"
+          >
+            49-day journeys of self-mastery. Rooted in timeless wisdom.
+          </p>
         </div>
 
         <div
